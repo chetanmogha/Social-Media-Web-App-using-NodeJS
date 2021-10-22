@@ -1,10 +1,11 @@
 const express= require('express');
-
+const cookieParser=require('cookie-parser');
 const app=express();
 const db=require('./config/mongoose');
 //const Chat=require('./models/chat');
 const expressLayouts=require('express-ejs-layouts')
-
+app.use(express.urlencoded());
+app.use(cookieParser());
 app.use(expressLayouts);
 // extract style and scripts from sub pages
 app.set('layout extractStyles',true);
@@ -16,7 +17,7 @@ app.use('/',require('./routes/index'))
 
 app.set('view engine','ejs')
 app.set('views','./views');
-app.use(express.urlencoded());
+
 app.use(express.static('assets'));
 
 app.listen(8000,(err)=>{
