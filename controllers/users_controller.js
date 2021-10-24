@@ -51,4 +51,6 @@ module.exports.create=function(req,res){
 // get the sign data
 module.exports.createSession=function(req,res){
     // will do it later
+
+    return res.redirect('/');
 }
