@@ -37,6 +37,7 @@ app.use(passport.session());
 app.use('/',require('./routes/index'))
 app.use(express.static('assets'));
 
+app.use(passport.setAuthenticatedUser);
 app.listen(8000,(err)=>{
     if(err){
         console.log(`Error on running server ${err}`);
