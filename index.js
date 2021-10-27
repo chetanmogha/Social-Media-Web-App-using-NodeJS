@@ -7,9 +7,10 @@ const passport=require('passport');
 const passportLocal=require('./config/passport-local-strategy')
 //const Chat=require('./models/chat');
 const expressLayouts=require('express-ejs-layouts')
-app.use(express.urlencoded());
+
 app.use(cookieParser());
 app.use(expressLayouts);
+app.use(express.urlencoded());
 // extract style and scripts from sub pages
 app.set('layout extractStyles',true);
 app.set('layout extractScripts',true);

@@ -47,13 +47,13 @@ passport.checkAuthentication=function(req,res,next){
     }
 
     // if the user is not signed in
-    res.redirect('/users/sign-in')
+    return res.redirect('/users/sign-in')
 }
 
 // set the user information in the middleware
 passport.setAuthenticatedUser=function(req,res,next){
-    if(!req.isAuthenticated()){
-        //req.user contains the information of current user 
+    if(req.isAuthenticated()){
+        //req.user contains the information of current signed in user 
         res.locals.user=req.user;
     }
     next();
