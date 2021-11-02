@@ -1,0 +1,36 @@
+#layout-header{
+    nav{
+        display:flex;
+        justify-content: space-between;
+        padding: 5px 10px;
+        background-image: linear-gradient(to right, #e1e7eb , #515557 );
+        color: rgb(22, 18, 18);;
+        box-shadow: 1px 1px 1px 1px lightgray;
+
+        .logo{
+            p{
+                margin:5px;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+        }
+    
+
+    .auth-links{
+        ul{
+            margin:3px 6px;
+            display:flex;
+            list-style-type: none;
+            li{
+                margin-right: 15px;
+            }
+        }
+    }
+    a{
+        color:rgb(22, 18, 18);;
+        list-style: none;
+        text-decoration:none;
+    }
+
+    }
+}

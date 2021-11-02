@@ -1,0 +1,15 @@
+#footer-layout {
+  color: #161212;
+  background-image: linear-gradient(to right, #e1e7eb, #515557);
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between; }
+  #footer-layout a {
+    color: #161212;
+    list-style: none;
+    text-decoration: none; }
+  #footer-layout .footer-nav ul {
+    color: #161212;
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none; }

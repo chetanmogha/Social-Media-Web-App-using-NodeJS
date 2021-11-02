@@ -1,4 +1,5 @@
-body{
-    margin: 0;
-    text-align: center;
-}
+body {
+  margin: 20px;
+  background-image: linear-gradient(to right, #e1e7eb, #515557); }
+  body #layout-main {
+    height: 100%; }

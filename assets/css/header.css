@@ -1,0 +1,21 @@
+#layout-header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  background-image: linear-gradient(to right, #e1e7eb, #515557);
+  color: #161212;
+  box-shadow: 1px 1px 1px 1px lightgray; }
+  #layout-header nav .logo p {
+    margin: 5px;
+    font-size: 1.5rem;
+    font-weight: bold; }
+  #layout-header nav .auth-links ul {
+    margin: 3px 6px;
+    display: flex;
+    list-style-type: none; }
+    #layout-header nav .auth-links ul li {
+      margin-right: 15px; }
+  #layout-header nav a {
+    color: #161212;
+    list-style: none;
+    text-decoration: none; }
